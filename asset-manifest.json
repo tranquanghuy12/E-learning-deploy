@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/e-learning-deploy/static/css/main.fb011ac7.css",
+    "main.js": "/e-learning-deploy/static/js/main.e5eec3fa.js",
+    "static/js/787.860cfd23.chunk.js": "/e-learning-deploy/static/js/787.860cfd23.chunk.js",
+    "static/media/banner-details-course.jpg": "/e-learning-deploy/static/media/banner-details-course.9abaa4b335f6abfbbdeb.jpg",
+    "static/media/dribbble_404.gif": "/e-learning-deploy/static/media/dribbble_404.181c5a6430bcb77324b1.gif",
+    "static/media/banner-gradient.jpg": "/e-learning-deploy/static/media/banner-gradient.57726b32539384b3aa81.jpg",
+    "static/media/pic3_1.png": "/e-learning-deploy/static/media/pic3_1.2498b34e71ac4d5ef4aa.png",
+    "static/media/avatar2woman2.png": "/e-learning-deploy/static/media/avatar2woman2.529351e8c81d8d6ddcbc.png",
+    "static/media/avatar3men1.png": "/e-learning-deploy/static/media/avatar3men1.d83b93e9f44b5692289a.png",
+    "static/media/avatar4men2.png": "/e-learning-deploy/static/media/avatar4men2.6dd76d266557a965e4cf.png",
+    "static/media/avatar5women1.jpeg": "/e-learning-deploy/static/media/avatar5women1.1b1ef8630eda3753ce24.jpeg",
+    "static/media/bg14.png": "/e-learning-deploy/static/media/bg14.2ac2d9fbbee7c4fdfdae.png",
+    "static/media/pic1.png": "/e-learning-deploy/static/media/pic1.232be78da30837caa9f6.png",
+    "index.html": "/e-learning-deploy/index.html",
+    "main.fb011ac7.css.map": "/e-learning-deploy/static/css/main.fb011ac7.css.map",
+    "main.e5eec3fa.js.map": "/e-learning-deploy/static/js/main.e5eec3fa.js.map",
+    "787.860cfd23.chunk.js.map": "/e-learning-deploy/static/js/787.860cfd23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb011ac7.css",
+    "static/js/main.e5eec3fa.js"
+  ]
+}
