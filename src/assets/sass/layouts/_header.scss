@@ -1,0 +1,26 @@
+.header__left {
+  .navbar-brand {
+    flex-grow: 1;
+    img {
+      width: 110px;
+    }
+  }
+  .Categories {
+    flex-grow: 1;
+    margin-left: 20px;
+    i {
+      margin: 5px;
+    }
+  }
+}
+
+
+
+.header__left {
+  @include responsive(MD) {
+    .form__search,
+    .Categories {
+      display: none;
+    }
+  }
+}

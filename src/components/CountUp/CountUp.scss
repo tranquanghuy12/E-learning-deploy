@@ -1,0 +1,104 @@
+@import "../../assets/sass/app.scss";
+.count {
+  padding: 5rem 0;
+  background-image: url(../../assets/img/Background/bg14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.count__content {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.icon {
+  position: relative;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  color: white;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  background-size: 200%;
+  font-size: 4rem !important;
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.icon span i {
+  font-size: 3rem;
+}
+.count__title {
+  width: 100%;
+  font-size: 4rem;
+}
+.style__description {
+  font-size: 1.5rem;
+  margin-bottom: 0 !important;
+}
+.count__item {
+  @include responsive(MD) {
+    .count__title {
+      font-size: 2rem;
+    }
+    .style__description {
+      font-size: 1rem;
+    }
+  }
+}
+
+.count__item .content h2,
+.count__item .content span {
+  font-size: 4rem;
+  color: #f55f8d;
+}
+
+.count__item .content p {
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+.count {
+  @include responsive(MD) {
+    padding: 1rem 0;
+    margin-top: 0 !important;
+  }
+  .count__item {
+    @include responsive(MD) {
+      padding: 1rem 0;
+    }
+    .icon {
+      @include responsive(XL) {
+        width: 6rem;
+        height: 6rem;
+        font-size: 3.5rem !important;
+      }
+      @include responsive(LG) {
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem !important;
+      }
+    }
+    .count__title {
+      @include responsive(XL) {
+        font-size: 3rem;
+      }
+      @include responsive(LG) {
+        font-size: 2.5rem;
+      }
+    }
+    .style__description {
+      @include responsive(LG) {
+        font-size: $fontSize-2;
+      }
+    }
+  }
+}

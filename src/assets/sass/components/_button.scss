@@ -1,0 +1,245 @@
+.btn-custom {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background-color: $second-color;
+  border-color: $second-color;
+  color: $bg-color;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $btn-color-0;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+// Button in banner Home component
+.banner__info {
+  .btn__get_started {
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: $fontSize-0;
+    font-weight: 600;
+    cursor: pointer;
+    background-image: linear-gradient(
+      to right,
+      $btn-color-4,
+      $btn-color-5,
+      $btn-color-4
+    );
+    background-size: 200%;
+    background-position: left;
+
+    transition: 400ms background-position ease-in-out;
+
+    &:hover {
+      background-position: right;
+    }
+  }
+}
+
+.btn-custom-1 {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background-color: $btn-color-1;
+  border-color: $primary-darkblue;
+  color: $primary-darkblue;
+  transition: transform 100ms cubic-bezier(0.2, 0, 1, 0.9);
+
+  &:hover {
+    color: $second-color;
+    transform: scale(1.05);
+    transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  }
+}
+
+.btn-custom-login {
+  color: white;
+  padding: 10px;
+  border-radius: 3rem;
+  border: none;
+  font-size: $fontSize-0;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    $btn-color-4,
+    $btn-color-5,
+    $btn-color-4
+  );
+  background-size: 200%;
+  background-position: left;
+
+  transition: 400ms background-position ease-in-out;
+
+  &:hover {
+    color: white;
+    background-position: right;
+  }
+}
+
+.btn-custom-logout {
+  color: black;
+  padding: 10px;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+  font-size: $fontSize-0;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $btn-color-4;
+    border: 1px solid $btn-color-4;
+    background-position: right;
+  }
+}
+
+.btn__small_card {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: $btn-color-1;
+  color: $primary-dark;
+  border: none;
+  margin-top: 6px;
+}
+
+.btn__edit_user {
+  padding: 6px;
+  font-size: 12px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+  background-color: $btn-color-1;
+  border: none;
+  color: $primary-darkblue;
+  transition: transform 100ms cubic-bezier(0.2, 0, 1, 0.9);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: scale(1.05);
+    transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  }
+}
+.btn__delete_user {
+  padding: 6px;
+  font-size: 12px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+  background-color: $btn-color-2;
+  border: none;
+  color: $primary-darkblue;
+  transition: transform 100ms cubic-bezier(0.2, 0, 1, 0.9);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: scale(1.05);
+    transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  }
+}
+.btn__ghidanh_user {
+  padding: 6px;
+  font-size: 12px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+  background-color: $second-color-light;
+  border: none;
+  color: $bg-color;
+  transition: transform 100ms cubic-bezier(0.2, 0, 1, 0.9);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: scale(1.05);
+    transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  }
+}
+
+.btn__custom_sm {
+  background-color: transparent;
+  line-height: 1.3333333;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &:nth-child(1) {
+    margin-right: $margin-1;
+  }
+  &:nth-child(2) {
+    margin-left: $margin-1;
+  }
+}
+.btn__color_next {
+  background-color: transparent;
+}
+
+.btn__icon {
+  padding: 4px;
+  font-size: 12px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+  border: none;
+  transition: transform 100ms cubic-bezier(0.2, 0, 1, 0.9);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: scale(1.05);
+    transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  }
+}
+
+.button__register_login_style {
+  margin-top: $margin-2;
+  min-width: 300px;
+  color: white;
+  padding: 8px;
+  border-radius: 3rem;
+  border: none;
+  font-size: $fontSize-0;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    $btn-color-4,
+    $btn-color-5,
+    $btn-color-4
+  );
+  background-size: 200%;
+  background-position: left;
+  border: none;
+
+  transition: 400ms background-position ease-in-out;
+
+  &:hover {
+    background-position: right;
+  }
+}

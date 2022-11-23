@@ -1,0 +1,110 @@
+@import "../../assets/sass/app.scss";
+
+.card {
+  border: none !important;
+}
+
+.card.project {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 15px 1px #8080806e;
+  &:hover {
+    box-shadow: 0 25px 55px rgb(253 71 102 / 22%);
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+  }
+  img {
+    height: 220px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover img {
+    transform: scale(1.1);
+    filter: brightness(50%);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.thumbnail {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.card-body .text-header {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+  z-index: 2;
+  line-height: 50px;
+  h4 {
+    color: black;
+    font-size: $fontSize-2;
+  }
+  h5 {
+    color: $bg-slate-4;
+    font-weight: 400;
+  }
+}
+
+.text-header {
+  position: relative;
+  h4 {
+    margin-bottom: $margin-0;
+    color: $primary-dark;
+    font-size: $fontSize-0;
+  }
+  h5 {
+    color: $primary-dark;
+    margin-bottom: $margin-0;
+    font-size: $fontSize-1;
+  }
+}
+.icon__info {
+  display: none;
+}
+.thumbnail {
+  position: relative;
+  &:hover .icon__info {
+    display: flex;
+    position: absolute;
+    display: block;
+  }
+}
+
+.card.project:hover .text-hover {
+  transform: translateY(5rem);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.card.project .text-hover {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  .more__detail {
+    cursor: pointer !important;
+    color: $bg-color;
+    font-weight: 600;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    padding: 4px;
+    background-color: $bg-login;
+    color: $primary-dark;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: $primary-dark;
+      color: $btn-color-1;
+    }
+  }
+}

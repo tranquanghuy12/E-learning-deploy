@@ -1,0 +1,188 @@
+@import "../../../../assets/sass/app.scss";
+
+header {
+  position: absolute;
+  width: 100%;
+  .bg-light {
+    background-color: $bg-color-1 !important;
+  }
+  nav.navbar {
+    margin-bottom: 0 !important;
+    padding: 2%;
+  }
+  .displayWhenSmallScreen {
+    // display none dropdown menu
+    display: none;
+    li {
+      padding-left: 12px;
+    }
+    .dropdown-submenu {
+      padding: 0 0 0 5px;
+      .dropdown-item {
+        padding-left: 12px;
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+    .dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+    #navbarDropdown {
+      color: black;
+      margin-top: 4px;
+      i {
+        margin-top: 3px;
+        font-size: 24px;
+      }
+    }
+  }
+  .header__left {
+    .navbar-brand {
+      img {
+        width: 150px !important;
+        max-width: 100% !important;
+      }
+      padding: 8px 16px !important;
+    }
+    .dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+    .Categories {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .nav__menu {
+        margin: 0;
+        &_item.active {
+          a {
+            color: $btn-color-4 !important;
+          }
+        }
+        &_item {
+          &:not(:last-child) {
+            margin-right: $margin-3;
+          }
+          a {
+            color: black;
+            font-size: $fontSize-0;
+            font-weight: 600;
+            &:hover {
+              color: $btn-color-4;
+            }
+          }
+        }
+      }
+      #navbarDropdown {
+        color: $second-color;
+        margin-top: 4px;
+        i {
+          margin-top: 8px;
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+
+  .col__display {
+    .navbar-nav {
+      .nav-item {
+        width: 145px;
+        max-width: 100%;
+
+        //number of registered courses style
+        .registered__courses_count {
+          position: absolute;
+          bottom: 80%;
+          left: 80%;
+          font-size: 12px;
+          background: #ff0000;
+          color: #fff;
+          border-radius: 10px;
+          padding: 2px 5px;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  //responsive
+  .display__when_small {
+    @include responsive(LG-1) {
+      .displayWhenSmallScreen {
+        display: block;
+        .dropdown-submenu {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @include responsive(MD) {
+      .displayWhenSmallScreen {
+        .dropdown-submenu {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    @include responsive(SM) {
+      width: auto !important;
+    }
+  }
+  .logo__when_md {
+    @include responsive(MD) {
+      text-align: right;
+    }
+  }
+  .display__sm {
+    @include responsive(SM) {
+      width: auto !important;
+    }
+  }
+  .col__display {
+    @include responsive(MD) {
+      display: none;
+    }
+  }
+  .header__left {
+    @include responsive(XS) {
+      justify-content: space-between !important;
+    }
+    @include responsive(MD) {
+      justify-content: space-between !important;
+    }
+    .dropdown {
+      &-menu {
+        @include responsive(MD) {
+          left: -170px !important;
+        }
+      }
+    }
+    .Categories {
+      @include responsive(LG-1) {
+        display: none;
+      }
+    }
+
+    .collapse__user_info {
+      @include responsive(LG-1) {
+        display: none;
+      }
+      @include responsive(LG) {
+        display: none;
+      }
+      @include responsive(MD) {
+        display: block;
+      }
+    }
+
+    @include responsive(SM) {
+      .navbar-brand {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+      .form__search {
+        display: none;
+      }
+    }
+  }
+}

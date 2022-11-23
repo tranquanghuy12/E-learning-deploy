@@ -1,0 +1,32 @@
+// Prev and Next page icon
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  font-size: $fontSize-0;
+  color: $btn-color-4 !important;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    font-size: 18px;
+  }
+}
+
+.disabled_btn {
+  color: $btn-color-6 !important;
+}
+
+//dropdown danh muc khoa hoc
+.danhmuc__dropdown_icon {
+  margin-top: 8px !important;
+}
+
+.fa-sign-out-alt {
+  padding-top: 1px;
+}
+
+.la-check {
+  font-size: 1rem;
+  padding: 2px;
+  border: 2px solid #f55f8d;
+  border-radius: 2rem;
+  color: #f55f8d;
+  margin-right: 8px;
+}

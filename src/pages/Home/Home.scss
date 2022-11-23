@@ -1,0 +1,206 @@
+@import "../../assets/sass/app.scss";
+.header__title {
+  font-weight: 600;
+}
+
+.banner {
+  padding: 15rem 0 15rem 0;
+  overflow: hidden;
+  background-image: url("../../assets/img/Banner/pic2.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  &__content {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+  &__info {
+    h1 {
+      margin-top: $margin-1;
+      margin-bottom: $margin-3;
+      font-weight: 700;
+      line-height: 60px;
+      span {
+        color: #f55f8d !important;
+      }
+    }
+    p {
+      font-size: $fontSize-0;
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+    ul {
+      li {
+        list-style: none;
+        margin-bottom: 1.5rem;
+        span {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .form__search {
+      flex-grow: 10;
+      display: flex;
+      align-items: center;
+      .input-group {
+        display: flex !important;
+        position: relative;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        width: 60%;
+        .form-control {
+          width: 100%;
+          padding: 20px 20px;
+
+          background-color: transparent;
+          transition: transform 250ms ease-in-out;
+          font-size: 14px;
+          line-height: 18px;
+
+          color: #575756;
+          background-color: transparent;
+          border-radius: 50px;
+          border: 1px solid #575756;
+          transition: all 250ms ease-in-out;
+          backface-visibility: hidden;
+          transform-style: preserve-3d;
+          &::placeholder {
+            color: color(#575756 a(0.8));
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+          }
+          &:focus,
+          &:hover {
+            padding: 20px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%);
+          }
+        }
+
+        &-append {
+          z-index: 10;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%) translateX(-70%);
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-size: 18px 18px;
+          background-position: 95% center;
+        }
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    img {
+      &:nth-child(1) {
+        position: absolute;
+        z-index: -1;
+        top: -6rem;
+        left: -1rem;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: -6rem;
+        left: -8rem;
+      }
+    }
+  }
+}
+
+.popular__courses {
+  background-image: url("../../assets/img/Background/bg2.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.course_by_category {
+  background-image: url("../../assets/img/Background/bg16.png");
+  background-size: 100%;
+  // background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* swinging image */
+@keyframes swinging {
+  from {
+    transform: rotate(-1deg) translate(-2px, -2px);
+  }
+  to {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+}
+
+.swing-image {
+  animation: swinging 3s ease-in-out alternate infinite;
+}
+
+/* Responsive */
+.banner {
+  @include responsive(LG) {
+    padding: 10rem 0 2rem 0;
+  }
+  .banner__info {
+    h1 {
+      @include responsive(LG) {
+        font-size: $fontSize-5;
+        line-height: 36px;
+        margin-bottom: 30px;
+      }
+    }
+    .form__search {
+      input::placeholder {
+        @include responsive(SM) {
+          font-size: 12px;
+        }
+        @include responsive(XS) {
+          color: transparent;
+        }
+      }
+    }
+    .btn__get_started {
+      @include responsive(LG) {
+        padding: 10px 20px;
+      }
+    }
+  }
+  .banner__image {
+    @include responsive(MD) {
+      display: none !important;
+    }
+    img {
+      &:nth-child(1) {
+        @include responsive(LG) {
+          width: 200%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        @include responsive(MD-1) {
+          width: 150%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      &:nth-child(2) {
+        @include responsive(LG) {
+          width: 260%;
+          left: -4.5rem;
+          top: 2rem;
+        }
+        @include responsive(MD-1) {
+          top: 4rem;
+          left: -4rem;
+          width: 205%;
+        }
+      }
+    }
+  }
+}
